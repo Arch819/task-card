@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Outlet } from "react-router-dom";
-import { Toaster } from "../ShadcnComponent/ui/toaster";
+import { Toaster } from "../ShadcnComponent/ui/Toast/toaster";
 
 type Props = {};
 

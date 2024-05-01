@@ -12,7 +12,7 @@ import React, { useState } from "react";
 import { ICartData } from "../../pages/CardRadixUiPage";
 import { ColorProps } from "./RadixUICard";
 import VariantColor from "./VariantColor";
-import { useToast } from "../ShadcnComponent/ui/use-toast";
+import { useToast } from "../ShadcnComponent/ui/Toast/use-toast";
 
 interface PriceProps {
   ram: { [key: number]: number };

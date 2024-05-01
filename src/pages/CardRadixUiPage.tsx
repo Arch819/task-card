@@ -1,13 +1,13 @@
 import React, { useState } from "react";
+import phoneData from "../data/samsung.json";
 
 import { useLocation } from "react-router-dom";
 import { Grid } from "@radix-ui/themes";
-import phoneData from "../../data/phone.json";
-import ButtonBack from "../../components/RedixComponent/ButtonBack";
-import { ColorProps } from "../../components/RedixComponent/RadixUICard";
-import DetailItem from "../../components/RedixComponent/DetailItem";
-import ImgCardBox from "../../components/RedixComponent/ImgCardBox";
-import InfoOptionBox from "../../components/RedixComponent/InfoOptionBox";
+import ButtonBack from "../components/RedixComponent/ButtonBack";
+import { ColorProps } from "../components/RedixComponent/RadixUICard";
+import DetailItem from "../components/RedixComponent/DetailItem";
+import ImgCardBox from "../components/RedixComponent/ImgCardBox";
+import InfoOptionBox from "../components/RedixComponent/InfoOptionBox";
 
 export interface ImgProps {
   [key: string]: string[];
@@ -30,7 +30,7 @@ export interface ICartData {
     delivery: string;
     returns: string;
     payments: string[];
-  }; //
+  };
   availability: boolean;
 }
 

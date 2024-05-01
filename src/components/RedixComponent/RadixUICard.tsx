@@ -1,5 +1,5 @@
 import { Text, Card, Badge, Heading } from "@radix-ui/themes";
-import phoneData from "../../data/phone.json";
+import phoneData from "../../data/samsung.json";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import VariantColor from "./VariantColor";

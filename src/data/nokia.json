@@ -1,0 +1,61 @@
+{
+  "title": "Nokia 4.2 Dual Sim",
+  "model": "SM-G986U, SM-G986U1",
+  "prise": 229,
+  "goodsInStock": 20,
+  "img": {
+    "pink": [
+      "/phone/nokia/pink/nokia-4-2-mexico-telcel-movistar-02.jpg",
+      "/phone/nokia/pink/nokia-4_2-pink-back-int.png",
+      "/phone/nokia/pink/nokia-4_2-pink-front_back-int.jpg",
+      "/phone/nokia/pink/nokia_4_2-og_image.jpg"
+    ],
+    "black": [
+      "/phone/nokia/black/78690504.webp",
+      "/phone/nokia/black/78690509.webp",
+      "/phone/nokia/black/78690514.webp",
+      "/phone/nokia/black/78690519.webp",
+      "/phone/nokia/black/78690520.webp",
+      "/phone/nokia/black/786905201.webp"
+    ]
+  },
+  "video": "https://youtu.be/vzoLiA9R0eo",
+  "description": "Mobile phone Nokia 4.2 Dual Sim TA-1157 Black",
+  "colors": ["Pink", "Black"],
+  "memory": [32, 64, 128],
+  "ram": [3, 8, 16],
+  "characteristics": [
+    {
+      "name": "Communication standard",
+      "value": "2G (GPRS/EDGE)/3G (WCDMA/UMTS/HSPA)/4G (LTE)"
+    },
+    { "name": "Screen Size", "value": "5.71 in" },
+    { "name": "Display resolution", "value": "1520 x 720" },
+    { "name": "Matrix type", "value": "TFT" },
+    { "name": "Screen material", "value": "Glass" },
+    { "name": "SIM cards", "value": "2 x Nano-SIM" },
+    { "name": "MicroSD", "value": true },
+    { "name": "Operating system", "value": "Android" },
+    { "name": "Front camera", "value": "8 Мп F2.0 / 1.12" },
+    {
+      "name": "Main camera",
+      "value": "13 Мп AF/F2.2/1.12 мк + 2 Мп FF/F2.2/1.75 "
+    }
+  ],
+  "condition": "Screen (5.71&#34;, TFT, 1520x720)/ Qualcomm Snapdragon 439 (2 GHz)/ dual main camera: 13 MP + 2 MP, front camera: 8 MP, RAM 3 GB/8 GB/16 GB, memory: 32 GB/ 64 GB/ 128 GB internal memory + microSD (up to 400 GB)/ 3G/ LTE/ A-GPS/ GLONASS/ support for 2 SIM cards (Nano-SIM)/ Android 9.0 (Pie)/ 3000 mAh",
+  "in-box": [
+    "1x Smartphone",
+    "1x Charger",
+    "1x USB Cable",
+    "1x Headset",
+    "1x Manual"
+  ],
+  "delivery": {
+    "shipping": "Delivery to your country is possible.",
+    "location": "SZ, China",
+    "delivery": "Varies",
+    "returns": "30 days returns. Seller pays for return shipping.",
+    "payments": ["PayPal", "GPay", "Visa", "MasterCard"]
+  },
+  "accessories": []
+}
