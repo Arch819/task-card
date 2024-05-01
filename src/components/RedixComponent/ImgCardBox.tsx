@@ -26,7 +26,7 @@ function ImgCardBox({ changeImg, imgs, color, currentImgIndex, title }: Props) {
       <Box
         position="relative"
         mb="1"
-        style={{ border: "1px solid #aeaeae70", borderRadius: "4px" }}
+        className="border border-[#aeaeae70] rounded-[4px]"
       >
         <PaginationImg
           onChange={changeImg}
@@ -36,11 +36,7 @@ function ImgCardBox({ changeImg, imgs, color, currentImgIndex, title }: Props) {
         <IconButton
           variant="ghost"
           onClick={toggleIsFavorite}
-          style={{
-            position: "absolute",
-            top: "12px",
-            right: "12px",
-          }}
+          className="absolute top-[12px] right-[12px]"
         >
           {isFavirite ? (
             <HeartFilledIcon width={32} height={32} />
@@ -51,12 +47,7 @@ function ImgCardBox({ changeImg, imgs, color, currentImgIndex, title }: Props) {
         <img
           src={imgs[color][currentImgIndex]}
           alt={`${color}${title}`}
-          style={{
-            display: "block",
-            objectFit: "contain",
-            width: "100%",
-            height: "480px",
-          }}
+          className="object-contain w-full h-[480px]"
         />
       </Box>
       <ScrollArea type="hover" scrollbars="horizontal" style={{ height: 100 }}>
@@ -65,22 +56,12 @@ function ImgCardBox({ changeImg, imgs, color, currentImgIndex, title }: Props) {
             <Box
               key={i}
               onClick={() => changeImg(i)}
-              style={{
-                border: "1px solid #aeaeae70",
-                borderRadius: "4px",
-                overflow: "hidden",
-                cursor: "pointer",
-              }}
+              className="border border-[#aeaeae70] rounded overflow-hidden cursor-pointer"
             >
               <img
                 src={img}
                 alt={`small size ${title}`}
-                style={{
-                  display: "block",
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "80px",
-                }}
+                className=" object-cover w-full h-[80px]"
               />
             </Box>
           ))}

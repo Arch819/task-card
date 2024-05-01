@@ -9,12 +9,19 @@ import {
 } from "./ui/card";
 import phoneData from "src/data/nokia.json";
 import { ImgProps } from "src/pages/CardRadixUiPage";
+import VariantColor from "./VariantColor";
 
 export type ColorProps = "pink" | "black";
+
+export interface ICharacteristics {
+  name: string;
+  value: string;
+}
 
 export interface IPhoneData {
   title: string;
   model: string;
+  rating: number;
   prise: number;
   goodsInStock: number;
   img: ImgProps;
@@ -23,7 +30,7 @@ export interface IPhoneData {
   colors: string[];
   memory: number[];
   ram: number[];
-  characteristics: { name: string; value: string }[];
+  characteristics: ICharacteristics[];
   condition: string;
   "in-box": string[];
   delivery: {
@@ -33,7 +40,8 @@ export interface IPhoneData {
     returns: string;
     payments: string[];
   };
-  accessories: [];
+  accessories: {}[];
+  reviews: {}[];
 }
 
 type ShadcnCardProps = {};
@@ -48,50 +56,34 @@ function ShadcnCard({}: ShadcnCardProps) {
   };
 
   return (
-    <Card
-      className="px-10"
-      style={{
-        padding: "24px",
-        border: "1px solid #0009321f",
-        borderRadius: "12px",
-      }}
-    >
-      <Link
-        to="/"
-        state={{ from: location, color: color }}
-        style={{ color: "#1f1f1f" }}
-      >
-        <CardContent>
+    <Card className="p-[24px] border border-[#0009321f] rounded-[12px]">
+      <Link to="/cardShadcnUi" state={{ from: location, color: color }}>
+        <CardContent className="flex justify-center p-0 mb-[12px]">
           <img
             src={phoneData.img[color][0]}
             alt={phoneData.title}
-            style={{
-              display: "block",
-              objectFit: "contain",
-              width: "100%",
-              height: 180,
-              marginBottom: "12px",
-            }}
+            className="object-contain h-[180px] "
           />
-          {/* <iframe
-            width="576"
-            height="324"
-            src="https://www.youtube.com/embed/vzoLiA9R0eo"
-            title="Обзор Nokia 4.2 - когда слышишь отзвуки прошлого"
-            // frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe> */}
         </CardContent>
-        <CardHeader>
-          <CardDescription color="amber" className="w-700">
+        <CardHeader className="p-0">
+          <CardDescription
+            color="amber"
+            className="text-base text-[#ab6400] font-bold"
+          >
             {phoneData.prise}$
           </CardDescription>
-          <CardTitle>{phoneData.title}</CardTitle>
-          <CardDescription>{phoneData.description}</CardDescription>
+          <CardTitle className="text-lg">{phoneData.title}</CardTitle>
+          <CardDescription className="text-[#1f1f1f]">
+            {phoneData.description}
+          </CardDescription>
         </CardHeader>
       </Link>
+      <VariantColor
+        changeColor={changeColor}
+        color={color}
+        colorsArray={phoneData.colors}
+        className="mt-2"
+      />
     </Card>
   );
 }

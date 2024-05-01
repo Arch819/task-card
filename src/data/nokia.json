@@ -2,25 +2,26 @@
   "title": "Nokia 4.2 Dual Sim",
   "model": "SM-G986U, SM-G986U1",
   "prise": 229,
+  "rating": 4.4,
   "goodsInStock": 20,
   "img": {
     "pink": [
       "/phone/nokia/pink/nokia-4-2-mexico-telcel-movistar-02.jpg",
-      "/phone/nokia/pink/nokia-4_2-pink-back-int.png",
+      "/phone/nokia/pink/nokia-4_2-pink-back-int.jpg",
       "/phone/nokia/pink/nokia-4_2-pink-front_back-int.jpg",
       "/phone/nokia/pink/nokia_4_2-og_image.jpg"
     ],
     "black": [
-      "/phone/nokia/black/78690504.webp",
-      "/phone/nokia/black/78690509.webp",
-      "/phone/nokia/black/78690514.webp",
-      "/phone/nokia/black/78690519.webp",
-      "/phone/nokia/black/78690520.webp",
-      "/phone/nokia/black/786905201.webp"
+      "/phone/nokia/black/78690504.jpg",
+      "/phone/nokia/black/78690509.jpg",
+      "/phone/nokia/black/78690514.jpg",
+      "/phone/nokia/black/78690519.jpg",
+      "/phone/nokia/black/78690520.jpg",
+      "/phone/nokia/black/786905201.jpg"
     ]
   },
   "video": "https://youtu.be/vzoLiA9R0eo",
-  "description": "Mobile phone Nokia 4.2 Dual Sim TA-1157 Black",
+  "description": "Mobile phone Nokia 4.2 Dual Sim TA-1157",
   "colors": ["Pink", "Black"],
   "memory": [32, 64, 128],
   "ram": [3, 8, 16],
@@ -34,7 +35,7 @@
     { "name": "Matrix type", "value": "TFT" },
     { "name": "Screen material", "value": "Glass" },
     { "name": "SIM cards", "value": "2 x Nano-SIM" },
-    { "name": "MicroSD", "value": true },
+    { "name": "MicroSD", "value": "yes" },
     { "name": "Operating system", "value": "Android" },
     { "name": "Front camera", "value": "8 Мп F2.0 / 1.12" },
     {
@@ -57,5 +58,6 @@
     "returns": "30 days returns. Seller pays for return shipping.",
     "payments": ["PayPal", "GPay", "Visa", "MasterCard"]
   },
-  "accessories": []
+  "accessories": [],
+  "reviews": []
 }

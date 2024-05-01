@@ -5,13 +5,13 @@
   "tsx": true,
   "tailwind": {
     "config": "./tailwind.config.js",
-    "css": "@/index.css",
+    "css": "src/index.css",
     "baseColor": "zinc",
     "cssVariables": true,
     "prefix": ""
   },
   "aliases": {
-    "components": "@/components/ShadcnComponent",
-    "utils": "@/utils/utils.ts"
+    "components": "src/components/ShadcnComponent",
+    "utils": "src/utils/utils"
   }
 }

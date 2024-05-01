@@ -3,9 +3,10 @@ import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { Theme } from "@radix-ui/themes";
 import { BrowserRouter } from "react-router-dom";
-import "@radix-ui/themes/styles.css";
-import "./index.css";
 import App from "./components/App";
+import "@radix-ui/themes/styles.css";
+import "@smastrom/react-rating/style.css";
+import "./index.css";
 
 export const _ = undefined;
 

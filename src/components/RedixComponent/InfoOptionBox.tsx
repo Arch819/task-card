@@ -13,6 +13,7 @@ import { ICartData } from "../../pages/CardRadixUiPage";
 import { ColorProps } from "./RadixUICard";
 import VariantColor from "./VariantColor";
 import { useToast } from "../ShadcnComponent/ui/Toast/use-toast";
+import RatingComponent from "../Rating";
 
 interface PriceProps {
   ram: { [key: number]: number };
@@ -75,6 +76,7 @@ function InfoOptionBox({
       description: `${quantity}X ${data.title} ${ram}GB/${memory}GB/${color}`,
     });
   };
+
   return (
     <Box>
       <Flex justify="between" mb="4">
@@ -82,6 +84,10 @@ function InfoOptionBox({
         <Text size="6" weight="medium">
           ${countPrice()}
         </Text>
+      </Flex>
+      <Flex gap="3">
+        <RatingComponent rating={data.rating} />
+        <Text>{data.rating}</Text>
       </Flex>
       <Flex direction="column" gap="4" mb="6">
         <Box>
@@ -104,7 +110,7 @@ function InfoOptionBox({
           <RadioCards.Root
             defaultValue="1"
             columns={{ initial: "1", sm: "4" }}
-            style={{ alignItems: "center" }}
+            className="items-center"
           >
             <Text>Memory:</Text>
             <RadioCards.Item value="1" onClick={changeMemory}>
@@ -128,7 +134,7 @@ function InfoOptionBox({
           <RadioCards.Root
             defaultValue="1"
             columns={{ initial: "1", sm: "4" }}
-            style={{ alignItems: "center" }}
+            className="items-center"
           >
             <Text>Ram:</Text>
 
@@ -156,7 +162,7 @@ function InfoOptionBox({
           name="quantity"
           value={quantity}
           onChange={handleChangeQuantity}
-          style={{ textAlign: "center", height: "60px" }}
+          className="text-center h-[60px]"
         >
           <TextField.Slot>
             <IconButton
@@ -184,14 +190,7 @@ function InfoOptionBox({
               variant="ghost"
               onClick={addToBag}
               disabled={quantity === 0}
-              style={{
-                borderLeft: "1px solid",
-                backgroundColor: "#1f1f1f",
-                height: "100%",
-                padding: "0 100px",
-                color: "#aeaeae",
-                borderRadius: "0 6px 6px 0",
-              }}
+              className="bg-[#1f1f1f] h-full px-[100px] py-0 text-[#aeaeae] rounded-none rounded-tr rounded-br"
             >
               <Text>ADD TO BAG</Text>
             </IconButton>

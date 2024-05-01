@@ -3,7 +3,7 @@ import phoneData from "../data/samsung.json";
 
 import { useLocation } from "react-router-dom";
 import { Grid } from "@radix-ui/themes";
-import ButtonBack from "../components/RedixComponent/ButtonBack";
+import ButtonBack from "../components/ButtonBack";
 import { ColorProps } from "../components/RedixComponent/RadixUICard";
 import DetailItem from "../components/RedixComponent/DetailItem";
 import ImgCardBox from "../components/RedixComponent/ImgCardBox";
@@ -16,6 +16,7 @@ export interface ImgProps {
 export interface ICartData {
   title: string;
   prise: number;
+  rating: number;
   img: ImgProps;
   description: string;
   colors: string[];

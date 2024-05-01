@@ -22,27 +22,21 @@ function RadixUiCard({}: RadixUiCardProps) {
       <Link
         to="/cardRadixUi"
         state={{ from: location, color: color }}
-        style={{ color: "#1f1f1f" }}
+        className="text-[#1f1f1f]"
       >
         <Badge
           variant="surface"
           color="green"
           size="2"
           radius="full"
-          style={{ position: "absolute", top: "12px", right: "12px" }}
+          className="absolute top-[12px] right-[12px]"
         >
           Top
         </Badge>
         <img
           src={phoneData.img[color][0]}
           alt={phoneData.title}
-          style={{
-            display: "block",
-            objectFit: "contain",
-            width: "100%",
-            height: 180,
-            marginBottom: "12px",
-          }}
+          className="object-contain w-full h-[180px] mb-[12px]"
         />
         <Text color="amber" weight="bold">
           {phoneData.prise}$
@@ -54,7 +48,7 @@ function RadixUiCard({}: RadixUiCardProps) {
           as="p"
           size="2"
           wrap="nowrap"
-          style={{ textOverflow: "ellipsis", overflow: "hidden" }}
+          className="text-ellipsis overflow-hidden"
           title={phoneData.description}
           mb="1"
         >

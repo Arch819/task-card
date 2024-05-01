@@ -65,12 +65,7 @@ function DetailItem({ data, params }: Props) {
               <Button
                 onClick={handleFullHeight}
                 variant="ghost"
-                style={{
-                  paddingLeft: "24px",
-                  color: "#1f1f1f",
-                  textDecoration: "underline",
-                  fontWeight: "bold",
-                }}
+                className="pl-[24px] text-[#1f1f1f] underline font-bold"
               >
                 ALL FEATURES
               </Button>
@@ -83,13 +78,7 @@ function DetailItem({ data, params }: Props) {
 
           <Tabs.Content
             value="in-box"
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-
-              gap: "8px",
-            }}
+            className="flex flex-col items-center gap-[8px]"
           >
             <Heading as="h3">New in box with Accessories:</Heading>
             {data["in-box"].map((e) => (

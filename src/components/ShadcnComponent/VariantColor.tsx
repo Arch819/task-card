@@ -1,6 +1,5 @@
-import { Grid, Button } from "@radix-ui/themes";
 import React from "react";
-import { ColorProps } from "./RadixUICard";
+import { ColorProps } from "./ShadcnCard";
 
 interface ArrayColorProps {
   [key: string]: string[];
@@ -10,35 +9,35 @@ type Props = {
   color: ColorProps;
   colorsArray: string[];
   changeColor: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  className?: string;
 };
 export const arrayColor: ArrayColorProps = {
-  Red: ["red", "#ff0000"],
-  Grey: ["grey", "#616161"],
-  "Sky Blue": ["skyblue", "#87CEEB"],
+  Pink: ["pink", "#d19191"],
+  Black: ["black", "#2b2a2a"],
 };
 
-function VariantColor({ color, changeColor, colorsArray }: Props) {
+function VariantColor({ color, changeColor, colorsArray, className }: Props) {
   return (
-    <Grid columns="3" gap="1" width="70px">
+    <div className={`flex gap-1 ${className}`}>
       {colorsArray.map((c) => (
-        <Button
+        <button
           key={c}
-          size="1"
-          variant="solid"
-          radius="small"
           data-color={arrayColor[c][0]}
           onClick={changeColor}
           className={
             color === arrayColor[c][0] ? "btn-color active" : "btn-color"
           }
           style={{
+            width: "20px",
+
             backgroundColor: `${arrayColor[c][1]}`,
             height: "20px",
             cursor: "pointer",
+            borderRadius: "4px",
           }}
         />
       ))}
-    </Grid>
+    </div>
   );
 }
 

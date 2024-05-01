@@ -10,15 +10,7 @@ function ButtonBack({}: Props) {
   const backLinkHref = location.state?.from ?? "/";
 
   return (
-    <Link
-      to={backLinkHref}
-      style={{
-        display: "flex",
-        alignItems: "centern",
-        gap: "6px",
-        marginBottom: "10px",
-      }}
-    >
+    <Link to={backLinkHref} className="flex items-center gap-[6px] mb-[10px]">
       <ArrowLeftIcon />
       <span>Go back</span>
     </Link>
