@@ -1,0 +1,57 @@
+{
+  "title": "Samsung Galaxy S20+",
+  "prise": 229.0,
+  "img": {
+    "red": [
+      "/phone/red/32193.350x0.jpg",
+      "/phone/red/32194.970.jpg",
+      "/phone/red/32195.970.jpg",
+      "/phone/red/32196.970.jpg",
+      "/phone/red/32197.970.jpg",
+      "/phone/red/images.jpg"
+    ],
+    "grey": [
+      "/phone/grey/32609.350x0.jpg",
+      "/phone/grey/32610.970.jpg",
+      "/phone/grey/32611.970.jpg",
+      "/phone/grey/32612.970.jpg"
+    ],
+    "skyblue": [
+      "/phone/sky-blue/32529.350x0.jpg",
+      "/phone/sky-blue/32530.970.jpg",
+      "/phone/sky-blue/32531.970.jpg",
+      "/phone/sky-blue/32532.970.jpg"
+    ]
+  },
+  "description": "NEW in Box Samsung Galaxy S20+ PLUS G986U1 Unlocked GSM+CDMA All Colors",
+  "colors": ["Grey", "Red", "Sky Blue"],
+  "memory": [64, 128, 256],
+  "ram": [8, 16, 24],
+  "features": [
+    { "name": "Brand", "value": "Samsung" },
+    { "name": "Model", "value": "Samsung Galaxy S20+" },
+    { "name": "Model Number", "value": "SM-G986U, SM-G986U1" },
+    { "name": "Screen Size", "value": "6.7 in" },
+    { "name": "Operating System", "value": "Android" },
+    { "name": "Camera Resolution", "value": "12.0 - 15.9 MP" },
+    { "name": "Processor", "value": "Octa Core" },
+    { "name": "Lock Status", "value": "Factory Unlocked" },
+    { "name": "SIM Card Slot", "value": "Single SIM" }
+  ],
+  "condition": "New: A brand-new, unused, unopened, undamaged item in its original packaging (where packaging is applicable). Packaging should be the same as what is found in a retail store, unless the item is handmade or was packaged by the manufacturer in non-retail packaging, such as an unprinted box or plastic bag. See the seller's listing for full details.",
+  "in-box": [
+    "1x Smartphone",
+    "1x Charger",
+    "1x USB Cable",
+    "1x Headset",
+    "1x Manual"
+  ],
+  "delivery": {
+    "shipping": "Delivery to your country is possible.",
+    "location": "SZ, China",
+    "delivery": "Varies",
+    "returns": "30 days returns. Seller pays for return shipping.",
+    "payments": ["PayPal", "GPay", "Visa", "MasterCard"]
+  },
+  "availability": true
+}
